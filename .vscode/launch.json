@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-EstoquePrecoApplication<estoque-preco>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.fabri.EstoquePrecoApplication",
+      "projectName": "estoque-preco",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
