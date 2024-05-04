@@ -1,0 +1,11 @@
+spring:
+  application.name: stock-price
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+server:
+  port: 8080
+  servlet:
+    context-path: "/stock-price"
