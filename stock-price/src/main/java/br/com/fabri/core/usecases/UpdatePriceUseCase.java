@@ -1,4 +1,4 @@
-package br.com.fabri.core.usecase;
+package br.com.fabri.core.usecases;
 
 import br.com.fabri.api.dto.PriceDTO;
 

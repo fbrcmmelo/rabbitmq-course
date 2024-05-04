@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fabri.api.dto.StockDTO;
 import br.com.fabri.api.openapi.StockControllerOpenApi;
-import br.com.fabri.core.service.RabbitMqStockService;
+import br.com.fabri.core.services.RabbitMqStockService;
 
 @RestController
 @RequestMapping(value = "/stock", produces = MediaType.APPLICATION_JSON_VALUE)

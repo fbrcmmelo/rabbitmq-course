@@ -9,3 +9,9 @@ server:
   port: 8080
   servlet:
     context-path: "/stock-price"
+project:
+  version: "@project.version@"
+  description: "@project.description@"
+springdoc:
+  packages-to-scan:
+    - "br.com.fabri.api.controller"

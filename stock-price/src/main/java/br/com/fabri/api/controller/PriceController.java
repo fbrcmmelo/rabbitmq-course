@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fabri.api.dto.PriceDTO;
 import br.com.fabri.api.openapi.PriceControllerOpenApi;
-import br.com.fabri.core.service.RabbitMqPriceService;
+import br.com.fabri.core.services.RabbitMqPriceService;
 
 @RestController
 @RequestMapping(value = "/price", produces = MediaType.APPLICATION_JSON_VALUE)
