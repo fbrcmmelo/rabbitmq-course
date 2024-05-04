@@ -10,10 +10,10 @@
 	</parent>
 	
 	<groupId>br.com.fabri</groupId>
-	<artifactId>estoque-preco</artifactId>
+	<artifactId>stock-price</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>estoque-preco</name>
-	<description>Rest Api</description>
+	<name>stock-price</name>
+	<description>Rest Api To Update Stock and Price</description>
 	
 	<properties>
 		<java.version>17</java.version>

@@ -1,14 +1,20 @@
 {
   "configurations": [
-    {
-      "type": "java",
-      "name": "Spring Boot-EstoquePrecoApplication<estoque-preco>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "br.com.fabri.EstoquePrecoApplication",
-      "projectName": "estoque-preco",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
-    }
-  ]
+	{
+		"type": "java",
+		"name": "StockPriceApplication",
+		"request": "launch",
+		"mainClass": "br.com.fabri.StockPriceApplication"
+	},
+	{
+		"type": "java",
+		"name": "Spring Boot-StockPriceApplication<stock-price>",
+		"request": "launch",
+		"cwd": "${workspaceFolder}",
+		"mainClass": "br.com.fabri.StockPriceApplication",
+		"projectName": "stock-price",
+		"args": "",
+		"envFile": "${workspaceFolder}/.env"
+	},
+]
 }
