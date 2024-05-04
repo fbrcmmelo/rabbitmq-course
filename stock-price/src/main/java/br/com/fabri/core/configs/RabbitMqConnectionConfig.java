@@ -1,4 +1,4 @@
-package br.com.fabri.core.config;
+package br.com.fabri.core.configs;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
