@@ -1,6 +1,6 @@
 package br.com.fabri.core.usecases;
 
-import br.com.fabri.api.dto.PriceDTO;
+import br.com.fabri.dto.PriceDTO;
 
 public interface UpdatePriceUseCase {
 

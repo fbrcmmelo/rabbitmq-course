@@ -7,8 +7,8 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Configuration;
 
-import br.com.fabri.core.consts.ExchangeConstants;
-import br.com.fabri.core.consts.QueueConstants;
+import br.com.fabri.consts.ExchangeConstants;
+import br.com.fabri.consts.QueueConstants;
 import jakarta.annotation.PostConstruct;
 
 @Configuration

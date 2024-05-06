@@ -1,4 +1,4 @@
-package br.com.fabri.api.dto;
+package br.com.fabri.dto;
 
 import java.io.Serializable;
 

@@ -2,7 +2,7 @@ package br.com.fabri.api.openapi;
 
 import org.springframework.http.ResponseEntity;
 
-import br.com.fabri.api.dto.StockDTO;
+import br.com.fabri.dto.StockDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

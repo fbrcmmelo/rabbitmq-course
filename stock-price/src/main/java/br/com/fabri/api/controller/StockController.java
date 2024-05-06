@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fabri.api.dto.StockDTO;
 import br.com.fabri.api.openapi.StockControllerOpenApi;
 import br.com.fabri.core.services.RabbitMqStockService;
+import br.com.fabri.dto.StockDTO;
 
 @RestController
 @RequestMapping(value = "/stock", produces = MediaType.APPLICATION_JSON_VALUE)
