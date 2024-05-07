@@ -2,10 +2,10 @@ package br.com.fabri.core.services;
 
 import org.springframework.stereotype.Service;
 
-import br.com.fabri.api.dto.PriceDTO;
+import br.com.fabri.consts.QueueConstants;
 import br.com.fabri.core.adapters.RabbitMqServiceAdapter;
-import br.com.fabri.core.consts.QueueConstants;
 import br.com.fabri.core.usecases.UpdatePriceUseCase;
+import br.com.fabri.dto.PriceDTO;
 
 @Service
 public class RabbitMqPriceService implements UpdatePriceUseCase {

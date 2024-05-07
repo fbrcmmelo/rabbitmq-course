@@ -1,4 +1,4 @@
-package br.com.fabri.core.consts;
+package br.com.fabri.consts;
 
 public final class ExchangeConstants {
 

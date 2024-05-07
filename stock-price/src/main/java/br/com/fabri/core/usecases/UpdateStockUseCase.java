@@ -1,6 +1,6 @@
 package br.com.fabri.core.usecases;
 
-import br.com.fabri.api.dto.StockDTO;
+import br.com.fabri.dto.StockDTO;
 
 public interface UpdateStockUseCase {
 
