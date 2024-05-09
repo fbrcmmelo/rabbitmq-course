@@ -2,6 +2,12 @@
   "configurations": [
 	{
 		"type": "java",
+		"name": "StockConsumerApplication",
+		"request": "launch",
+		"mainClass": "br.com.fabri.stockconsumer.StockConsumerApplication"
+	},
+	{
+		"type": "java",
 		"name": "StockPriceApplication",
 		"request": "launch",
 		"mainClass": "br.com.fabri.StockPriceApplication"
@@ -16,5 +22,15 @@
 		"args": "",
 		"envFile": "${workspaceFolder}/.env"
 	},
+	{
+		"type": "java",
+		"name": "Spring Boot-StockConsumerApplication<stock-consumer>",
+		"request": "launch",
+		"cwd": "${workspaceFolder}",
+		"mainClass": "br.com.fabri.stockconsumer.StockConsumerApplication",
+		"projectName": "stock-consumer",
+		"args": "",
+		"envFile": "${workspaceFolder}/.env"
+	}
 ]
 }
