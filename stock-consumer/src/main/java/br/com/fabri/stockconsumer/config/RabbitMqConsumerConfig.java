@@ -1,18 +1,29 @@
 package br.com.fabri.stockconsumer.config;
 
-import java.util.List;
-
-import org.springframework.amqp.support.converter.SimpleMessageConverter;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import br.com.fabri.consts.QueueConstants;
+import br.com.fabri.stockconsumer.consumer.StockConsumer;
 
 @Configuration
 public class RabbitMqConsumerConfig {
 
-	@Bean("methodConverter")
-	public SimpleMessageConverter methodMessageConverter() {
-		SimpleMessageConverter converter = new SimpleMessageConverter();
-		converter.setAllowedListPatterns(List.of("br.com.fabri.dto.StockDTO"));
-		return converter;
+	@Bean
+	SimpleMessageListenerContainer simpleMessageListenerContainer(ConnectionFactory connectionFactory,
+			MessageListenerAdapter messageListenerAdapter) {
+		SimpleMessageListenerContainer simpleMessageListenerContainer = new SimpleMessageListenerContainer();
+		simpleMessageListenerContainer.setConnectionFactory(connectionFactory);
+		simpleMessageListenerContainer.setQueueNames(QueueConstants.STOCK);
+		simpleMessageListenerContainer.setMessageListener(messageListenerAdapter);
+		return simpleMessageListenerContainer;
+	}
+
+	@Bean
+	MessageListenerAdapter messageListenerAdapter(StockConsumer consumer) {
+		return new MessageListenerAdapter(consumer, "consume");
 	}
 }
