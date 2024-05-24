@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e372b9c4-699f-42fe-8271-1ba0ea57595b",
+		"name": "rabbitmq-course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12459874"
+	},
+	"item": [
+		{
+			"name": "stock-price-producer",
+			"item": [
+				{
+					"name": "update-stock",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productCode\": \"LGTV-60S4D\",\n    \"quantity\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stock-price/stock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-price",
+								"stock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-price",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productCode\": \"LGTV-60S4D\",\n    \"price\": 2599.99\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stock-price/price",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-price",
+								"price"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
